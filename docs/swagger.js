@@ -28,8 +28,7 @@ const options = {
     apis:[
       "./routes/*.js"
     ]
-
- }
+}
 
  const openApiConfiguration = swaggerJsdoc(options);
 

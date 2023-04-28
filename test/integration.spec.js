@@ -1,7 +1,7 @@
 //
 const request = require('supertest');
 const mongoose = require('mongoose');
-import Usuario from'../models/Users';
+import Usuario from'../models/User';
 
 //Importando app de index.js
 import app from '../index'
@@ -17,8 +17,8 @@ describe('GET /api/user', () => {
   it('Debería obtener todos los usuarios', async () => {
     // Crear algunos usuarios para la prueba
     const usuarios = [
-      { nombresUsuario: 'Juan Perez', celularUsuario: 123456789 },
-      { nombresUsuario: 'Maria Gonzalez', celularUsuario: 987654321 },
+      { nombresUsuario: 'Carlos Marin', celularUsuario: 3205896632 },
+      { nombresUsuario: 'Laura Tamayo', celularUsuario: 3502584756 },
     ];
     await Usuario.insertMany(usuarios);
 
